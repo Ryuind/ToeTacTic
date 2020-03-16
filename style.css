@@ -1,0 +1,171 @@
+body{
+    position: relative;
+    background: linear-gradient(-45deg, #59C173, rgb(130, 202, 148), #a17fe0, rgb(118, 114, 126));
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+.gameTitle {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.gameBoardContainer {
+    margin: 100px 0px 0px 500px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    text-align: center;
+    font-size: 10rem;
+}
+
+#topLeft {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#topMid {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#topRight {
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+#midLeft {
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#midMid {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#midRight {
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#botLeft {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#botMid {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}
+
+#botRight {
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.smallerForm {
+    background-color: rgba(209, 209, 152, 0.8);
+    padding: 20px 50px 0px 40px;
+    margin: 150px 0px 0px 50px;
+    height: 500px;
+    width: 250px;
+    font-size: 2rem;
+}
+
+
+#myForm {
+    background-color:rgba(238, 230, 230, 0.116);;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 0px 0px 0px 0px;
+    z-index: 1;
+    overflow: auto;
+
+    
+    word-wrap: break-word;
+    break-after: always;
+    
+}
+
+.playerOneUserInput {
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 10px;
+    border-radius: 10px;
+}
+
+.playerTwoUserInput {
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 10px;
+    border-radius: 10px;
+}
+
+.playerInputButton {
+    margin: 20px 0px 0px 20px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.newGameButton {
+    position: absolute;
+    margin: 150px 0px 0px 1200px;
+    height: 500px;
+    width: 500px;
+
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 40%;
+    color: black;
+    cursor: pointer;
+    display: none;
+    align-self: center;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+    text-align: center;
+    
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  
+}
+
+.newGameButton:hover,
+.newGameButton:focus {
+color: rgba(22, 22, 14);
+outline: 0;
+box-shadow: 0 0 400px 400px rgba(87, 70, 47, 0.8) inset;
+transition: box-shadow 1000ms ease-in-out, color 1000ms ease-in-out;
+}
